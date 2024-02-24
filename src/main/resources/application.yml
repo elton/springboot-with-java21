@@ -1,0 +1,22 @@
+jdbc:
+  datasource-proxy:
+    include-parameter-values: true
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/api?stringtype=unspecified&reWriteBatchedInserts=true
+    username: elton
+    password: 04m27d
+  jpa:
+    properties:
+      hibernate:
+        show_sql: false
+        format_sql: false
+
+logging:
+  level:
+    web: info
+    # org.springframework.cache: TRACE
+    # hibernate.SQL: DEBUG
+    # hibernate.engine.jdbc.batch.internal.BatchingBatch: DEBUG
+    # reactor.netty.http.client.HttpClient: DEBUG
